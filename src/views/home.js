@@ -1,7 +1,7 @@
 
 import React from 'react';
-import Name from '../components/Name'
-import WebSite from '../components/WebSite'
+import Name from '@/components/Name';
+import WebSite from '@/components/WebSite';
 
 class Home extends React.Component {
   constructor() {
