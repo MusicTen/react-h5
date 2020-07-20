@@ -11,18 +11,34 @@ class Name extends React.Component {
   handleClick1() {
     console.log('this is:', this);
   }
-
   // 箭头函数确保了 `this` 绑定在  handleClick 中
   handleClick2 = () => {
     console.log('this is:', this);
   }
-  
+
+  //事件处理中的传参
+  handleClick3 = (idx) => {
+    // 初始化就会被执行一次
+    console.log('参数:', idx);
+  }
+  handleClick4 = (idx) => {
+    console.log('参数:', idx);
+  }
+  handleClick5 = e => {
+    // 使用data自定义属性传参
+    console.log('参数:', e.target.dataset.id);
+  }
   render() {
     return (
       <div>
         <h1>{this.props.name}</h1>
-        <button onClick={this.handleClick1}>点我</button>
-        <button onClick={this.handleClick2}>点吧</button>
+        <div style={{display: 'flex', justifyContent: 'space-around'}}>
+          <button onClick={this.handleClick1}>点我</button>
+          <button onClick={this.handleClick2}>点吧</button>
+          <button onClick={this.handleClick3(3)}>传参3</button>
+          <button onClick={this.handleClick4.bind(this, 4)}>传参4</button>
+          <button data-id={5} onClick={this.handleClick5}>传参5</button>
+        </div>
       </div>
     );
   }
