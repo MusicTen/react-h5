@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './assets/css/index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './serviceWorker'; // 目的是为了实现 app 的离线缓存
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
