@@ -1,6 +1,6 @@
 import React from 'react';
 
 const WebSite = props => {
-  return <h1>{ props.site }</h1>;
+  return <h3>{ props.site }</h3>;
 }
 export default WebSite;

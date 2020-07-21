@@ -39,6 +39,7 @@ class Name extends React.Component {
           <button onClick={this.handleClick4.bind(this, 4)}>传参4</button>
           <button data-id={5} onClick={this.handleClick5}>传参5</button>
         </div>
+        <a href="/about">关于我们</a>
       </div>
     );
   }
