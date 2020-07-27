@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+/* 
+  1 导入react-router-dom
+  2 导入页面组件
+  3 配置路由规则
+*/
+import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom'
+
+// 导入页面组件
+import Home from './pages/Home'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Route exact path="/" render={() => <Redirect to="/home" />}></Route>
+        <Route path="/home" component={Home}></Route>
+      </Router>
     </div>
   );
 }
