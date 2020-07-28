@@ -1,7 +1,14 @@
 {
   "name": "react-h5",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
+  "scripts": {
+    "start": "react-app-rewired start",
+    "pre": "dotenv -e .env.development react-app-rewired build",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
   "dependencies": {
     "antd-mobile": "^2.3.3",
     "cra-template": "1.0.3",
@@ -11,11 +18,11 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
-  "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.0",
+    "customize-cra": "^1.0.0",
+    "dotenv-cli": "^3.2.0",
+    "react-app-rewired": "^2.1.6"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,10 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "babel-plugin-import": "^1.13.0",
-    "customize-cra": "^1.0.0",
-    "react-app-rewired": "^2.1.6"
   }
 }

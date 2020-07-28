@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 // 导入 antd-mobile 的样式文件
 import 'antd-mobile/dist/antd-mobile.css'
@@ -8,13 +8,15 @@ import 'antd-mobile/dist/antd-mobile.css'
 import './assets/fonts/iconfont.css'
 
 // 导入全局样式
-import './index.css';
+import './index.css'
 
 // 导入根组件
-import App from './App';
+import App from './App'
+
+console.log(process.env.REACT_APP_BASEURL)
 
 // 渲染根组件
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))
 /* <React.StrictMode></React.StrictMode> 
-  通过ceact-react-app搭建的React项目，在使用antd-mobile组件库中的Carousel（跑马灯）组件时，报如下错误
+  通过ceact-react-app搭建的React项目，在使用antd-mobile组件库中的Carousel（跑马灯）组件时，会报错
 */

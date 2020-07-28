@@ -23,7 +23,7 @@ export default class Home extends React.Component {
 			selectedTab: props.location.pathname,
 			hidden: false,
 		}
-		console.log(props)
+		// console.log(props)
 	}
 	// 因为点击 Index首页 菜单，切换路由的时候，触发了 Home 组件的更新阶段
   // 所以，我们只要在更新阶段的钩子函数中，来处理下 菜单 高亮即可

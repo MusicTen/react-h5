@@ -30,3 +30,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
 create-react-app 生成的项目看不到 webpack 相关的配置文件，使用该命令可暴露项目配置
+
+### 利用 react-app-rewired 实现按需打包
+
+作用是在不`npm run eject`的情况下，覆盖create-react-app的配置
+
+### dotenv-cli
+
+作用是可以使用.env文件指定的变量，然后`process.env`对象就有该变量的值了
