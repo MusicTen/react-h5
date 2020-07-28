@@ -81,7 +81,7 @@ export default class News extends React.Component {
         <div className="imgwrap">
           <img
             className="img"
-            src={`https://picsum.photos/40?random=${item.id}`}
+            src={`https://picsum.photos/200?random=${item.id}`}
             alt=""
           />
         </div>
@@ -142,7 +142,7 @@ export default class News extends React.Component {
 									<span>{item.desc}</span>
 								</div>
 								<div>
-									<img src={`https://picsum.photos/40?random=${item.id}`} alt="" />
+									<img src={`https://picsum.photos/100?random=${item.id}`} alt="" />
 								</div>
 							</Flex>
 						)}
