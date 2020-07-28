@@ -2,28 +2,20 @@
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+### `yarn pre`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Builds the app for development to the `pre` folder.<br>
 
-### `npm run build`
+### `yarn build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -38,3 +30,9 @@ create-react-app 生成的项目看不到 webpack 相关的配置文件，使用
 ### dotenv-cli
 
 作用是可以使用.env文件指定的变量，然后`process.env`对象就有该变量的值了
+
+### 单页面路由的history模式后端配置
+
+使用history模式来实现的单页应用，访问项目进入首页，点击按钮跳入另一个路由，一切都是很正常的，但当这时刷新页面，发现就会出现404了。出现这样的错误Cannot GET /message/，因为默认浏览器会认为你是在请求服务端的路由，服务端那边没有对应的处理，所以自然就会出错了。
+
+可以引入connect-history-api-fallback中间件来解决
