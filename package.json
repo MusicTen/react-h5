@@ -3,11 +3,17 @@
   "version": "0.1.1",
   "private": true,
   "scripts": {
+    "commit": "git-cz",
     "start": "react-app-rewired start",
     "pre": "dotenv -e .env.development react-app-rewired build",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "antd-mobile": "^2.3.3",
@@ -20,7 +26,9 @@
   },
   "devDependencies": {
     "babel-plugin-import": "^1.13.0",
+    "commitizen": "^4.1.2",
     "customize-cra": "^1.0.0",
+    "cz-conventional-changelog": "^3.2.0",
     "dotenv-cli": "^3.2.0",
     "react-app-rewired": "^2.1.6"
   },
