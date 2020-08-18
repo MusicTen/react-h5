@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom'
 // 导入页面组件
 import Home from './pages/Home'
 import Map from './pages/Map'
+import Test from './pages/Test'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" render={() => <Redirect to="/home" />}></Route>
         <Route path="/home" component={Home}></Route>
         <Route path="/map" component={Map}></Route>
+        <Route path="/test" component={Test}></Route>
       </Router>
     </div>
   );
