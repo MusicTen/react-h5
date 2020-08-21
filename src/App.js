@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom'
 import Home from './pages/Home'
 import Map from './pages/Map'
 import Test from './pages/Test'
+import HooksDemo from './pages/HooksDemo'
 
 function App() {
   return (
@@ -20,9 +21,10 @@ function App() {
         <Route path="/home" component={Home}></Route>
         <Route path="/map" component={Map}></Route>
         <Route path="/test" component={Test}></Route>
+        <Route path="/hooks" component={HooksDemo}></Route>
       </Router>
     </div>
-  );
+  )
 }
 
 export default App;

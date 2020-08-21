@@ -1,0 +1,52 @@
+.useState {
+  background-color: rgba(183, 236, 183, 0.4);
+  text-align: center;
+  padding: 10px 0;
+  button {
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: blue;
+    color: #fff;
+    padding: 0 10px;
+  }
+}
+.useReducer {
+  background-color: rgba(183, 228, 236, 0.4);
+  text-align: center;
+  padding: 10px 0;
+  button {
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(255, 0, 255);
+    color: #fff;
+    padding: 0 20px;
+  }
+}
+.useEffect {
+  background-color: rgba(222, 236, 183, 0.4);
+  padding: 10px;
+}
+.navbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  p:last-child {
+    color: green;
+  }
+}
+.messages {
+  text-align: center;
+  padding-bottom: 10px;
+  p {
+    span {
+      color: green;
+      padding: 0 10px;
+    }
+  }
+}

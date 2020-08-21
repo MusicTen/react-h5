@@ -13,7 +13,8 @@ import './index.css'
 // 导入根组件
 import App from './App'
 
-console.log(process.env.REACT_APP_BASEURL)
+console.log('env:', process.env.REACT_APP_BASEURL)
+console.log('React:', React)
 
 // 渲染根组件
 ReactDOM.render(<App />, document.getElementById('root'))
