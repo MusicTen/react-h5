@@ -18,10 +18,14 @@ import React, { useState, useReducer, useEffect } from 'react'
 
 import Navbar from './Navbar'
 import Messages from './Messages'
+import PureCom from './PureCom'
+import CommonCom from './CommonCom'
 
 import './index.scss'
 
 import AppContext from './context'
+
+let option = {a: 1}
 
 export default function HooksDemo() {
   /* 
@@ -66,6 +70,14 @@ export default function HooksDemo() {
       })
   }, [personId])
 
+  // const [option, setOption] = useState({a: 1})
+  // function handleOption() {
+  //   setOption({a: '1'})
+  // }
+  function handleOption() {
+    option = {a: 2}
+    console.log(234, option)
+  }
   return (
     /* 
       AppContext.Provider提供了一个 Context 对象，这个对象可以被子组件共享
@@ -93,6 +105,11 @@ export default function HooksDemo() {
           <p>You're viewing: {person.name}</p>
           <p>Height: {person.height}</p>
           <p>Mass: {person.mass}</p>
+        </div>
+        <div style={{backgroundColor: "skyblue", textAlign: 'center', padding: '10px 0'}}>
+          <button onClick={() => { handleOption() }}>更改option</button>
+          <PureCom option={option} />
+          <CommonCom option={option} />
         </div>
       </div>
     </AppContext.Provider>
