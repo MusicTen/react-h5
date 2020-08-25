@@ -1,14 +1,18 @@
 import React, { useState, useReducer, useEffect } from 'react'
 
+// React Hooks 的设计目的，就是加强版函数组件，完全不使用"类"，就能写出一个全功能的组件
+
 // React Hooks 的意思是，组件尽量写成纯函数，如果需要外部功能和副作用，就用钩子把外部代码"钩"进来
 // React Hooks 就是那些钩子
 // React 默认提供了一些常用钩子，你也可以封装自己的钩子
 
 // React 默认提供的四个最常用的钩子:
-// useState()：状态钩子
-// useContext()：共享状态钩子
-// useReducer()：action 钩子
-// useEffect()：副作用钩子
+/* 
+  useState()：状态钩子
+  useContext()：共享状态钩子
+  useReducer()：action 钩子
+  useEffect()：副作用钩子
+*/
 
 // 所有的钩子都是为函数引入外部功能，所以 React 约定，钩子一律使用use前缀命名，便于识别。你要使用 xxx 功能，钩子就命名为 usexxx。
 
@@ -70,7 +74,8 @@ export default function HooksDemo() {
     <AppContext.Provider
       value={{
         tabItem: 'super',
-        username: awesome
+        username: awesome,
+        setAwesome // 通过 Provider.value 将方法提供出去
       }}
     >
       <div className="App">

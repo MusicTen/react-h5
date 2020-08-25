@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import AppContext from './context'
 
 export default function Navbar(props) {
-  console.log('父子传值:', props)
+  // console.log('父子传值:', props)
   const { tabItem } = useContext(AppContext)
   return (
     <div className="navbar">

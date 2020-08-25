@@ -14,7 +14,7 @@ import './index.css'
 import App from './App'
 
 console.log('env:', process.env.REACT_APP_BASEURL)
-console.log('React:', React)
+// console.log('React:', React)
 
 // 渲染根组件
 ReactDOM.render(<App />, document.getElementById('root'))
