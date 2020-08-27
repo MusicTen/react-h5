@@ -20,7 +20,8 @@ import Home from './pages/Home'
   在react中我们一般使用react-loadable来实现组件懒加载的能力
   但是，lazy并不支持服务端渲染（SSR），所以在使用ssr的情况下，lazy暂时不能使用
 */
-const Map = lazy(() => import('./pages/Map')) // 这里改变了
+// import Map from './pages/Map' // 直接引入会导致css样式冲突问题
+const Map = lazy(() => import('./pages/Map')) // 组件异步加载
 const HooksDemo = lazy(() => import('./pages/HooksDemo'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 const Test = lazy(() => import('./pages/Test'))

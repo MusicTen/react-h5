@@ -5,8 +5,6 @@ import React from 'react'
 
 import {
   PickerView,
-  NavBar,
-  Icon,
   List,
   InputItem,
   ImagePicker,
@@ -31,22 +29,8 @@ const data = [
 
 export default class Address extends React.Component {
   state = {
-    visible: false,
-    selected: '',
     files: data,
     open: false
-  }
-  // 渲染NavBar
-  renderNavBar() {
-    return (
-      <NavBar
-        mode="light"
-        icon={<Icon type="left" />}
-        onLeftClick={() => console.log('onLeftClick')}
-      >
-        填写地址
-      </NavBar>
-    )
   }
   // 渲染表单
   renderTable() {
@@ -99,8 +83,8 @@ export default class Address extends React.Component {
   }
   render() {
     return (
-      <div>
-        <NavHeader title=""></NavHeader>
+      <div className="address">
+        <NavHeader title="填写地址"></NavHeader>
         <WhiteSpace></WhiteSpace>
         {this.renderTable()}
         {this.renderImagePicker()}

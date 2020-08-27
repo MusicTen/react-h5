@@ -1,0 +1,17 @@
+
+.map {
+  height: 100%;
+  padding-top: 45px;
+  :global {
+    .am-navbar {
+      background-color: red;
+    }
+  }
+  .container {
+    height: 100%;
+  }
+}
+// :global(className)来标识这个类是全局类名
+// :global(.am-navbar) {
+//   background-color: red;
+// }
