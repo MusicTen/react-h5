@@ -1,6 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class PureCom extends React.PureComponent {
+  static propTypes = {
+    option: PropTypes.object
+  }
+  
   render() {
     // console.log('PureComponent render', this.props)
     return <div>这是 PureComponent测试 组件，props.option.a:{this.props.option.a}</div>

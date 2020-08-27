@@ -1,6 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class CommonCom extends React.Component {
+  static propTypes = {
+    option: PropTypes.object
+  }
   // shouldComponentUpdate(nextProps, nextState) {
   //   if (this.props.option === nextProps.option) {
   //     return false
