@@ -1,0 +1,13 @@
+.my-drawer {
+  width: 100%;
+  position: fixed;
+  bottom: -238px;
+  z-index: 10;
+  opacity: 0;
+  background-color: #fff;
+  transition: bottom .2s ease-in, opacity .2s ease-in;
+}
+.active {
+  bottom: 0;
+  opacity: 1;
+}

@@ -25,6 +25,7 @@ const HooksDemo = lazy(() => import('./pages/HooksDemo'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 const Test = lazy(() => import('./pages/Test'))
 const AA = lazy(() => import('./pages/AA'))
+const Address = lazy(() => import('./pages/Address'))
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route exact path="/test" component={Test}></Route>
             <Route path="/test/:id" component={AA}></Route>
             <Route path="/hooks" component={HooksDemo}></Route>
+            <Route path="/address" component={Address}></Route>
             { /* Switch 在其中的<Route>在路径相同的情况下，只匹配第一个，这个可以避免重复匹配。也用来匹配404页面 */ }
             <Route component={NotFound} />
           </Switch>
