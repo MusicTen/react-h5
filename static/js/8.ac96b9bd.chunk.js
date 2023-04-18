@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-h5"]=this["webpackJsonpreact-h5"]||[]).push([[8],{217:function(t,n,e){"use strict";e.r(n),e.d(n,"default",(function(){return r}));var a=e(0),c=e.n(a);function r(t){return console.log(t.match.params.id),c.a.createElement("div",null,"\u52a8\u6001\u8def\u7531")}}}]);
+//# sourceMappingURL=8.ac96b9bd.chunk.js.map
